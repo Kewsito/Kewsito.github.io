@@ -1,0 +1,345 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.contenedor{
+	padding: 60px 0px;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.titulo{
+	color: #123d6a;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/*HEADER*/
+
+
+header{
+	width: 100%;
+	height: 600px;
+	background:#134e5e;
+	background: -webkit-linear-gradient(to right, hsla(197, 38%, 28%, 0.493), hsla(194, 35%, 19%, 0.637), hsla(198, 43%, 11%, 0.541)), url(/img/header/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, hsla(197, 38%, 28%, 0.493), hsla(194, 35%, 19%, 0.637), hsla(198, 43%, 11%, 0.541)), url(/img/header/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+	position: relative;
+}
+
+nav{
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+
+nav > a {
+	color: white;
+	text-decoration: none;
+	margin-right:10px;
+	
+}
+nav > a:hover{
+	text-decoration: underline;
+	margin: 5px;
+	
+}
+
+
+header .texto-header{
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.texto-header img{
+	width: 400px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid white;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+}
+
+/*SOBRE NOSOTROS*/
+
+label {
+	padding-right: 10px;
+	font-size: 1rem;
+}
+.sobre-mi-descripcion{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.contenedor-sobre-nosotros{
+	display: flex;
+	justify-content: space-evenly;
+}
+.contenedor-sobre-nosotros img{
+	width: 100%;
+	height: 100%;
+	margin:auto;
+	margin-right: 15%;
+	border-radius: 50%;
+	box-shadow: 0 0 5px rgba(0, 0, 0,.6);
+}
+
+.sobre-nosotros .contenido-textos{
+	width: 50%;
+	
+}
+
+.contenido-textos h3{
+	margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+	background:#335a61;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	box-shadow: 0 0 6px rgba(0,0, 0, .5);
+	margin-right: 5px;
+}
+
+
+.contenido-textos p{
+	padding: 0px 0px 50px 15px;
+	font-weight: 300;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+
+/*PORTAFOLIO*/
+
+.portafolio{
+	background: #596769;
+
+}
+
+.galeria-port{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.imagen-port{
+	width: 30%;
+	margin-bottom: 10px;
+	height: 300px;
+
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 0 0 10px 0 rgba(19, 17, 17, 0.705);
+}
+
+.imagen-port > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.hover-galeria{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: #fffcfca9;
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hover-galeria img{
+	width: 50px;
+
+}
+
+.hover-galeria p{
+	color: black;
+}
+
+.imagen-port:hover .hover-galeria{
+	transform: scale(1);
+}
+
+
+/*CLIENTES*/
+
+
+.cards{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.cards .card{
+	background: #134e5e;
+	display: flex;
+	width: 46%;
+	height: 200px;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	box-shadow: 0 0 6px rgba(0,0, 0, .5);
+
+}
+
+.cards .card img{
+	width: 100px;
+	height: 100px;
+	border: 3px solid #fff;
+	object-fit: cover;
+	border-radius: 50%;
+	display: block;
+}
+
+.cards .card > .contenido-texto-card{
+	width: 60%;
+	color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+	font-weight: 300;
+	padding-top: 10px;
+}
+
+/*NUESTROS SERVICIOS*/
+
+.sobre-servicios{
+	background:#596769;
+	padding-bottom: 30px;
+
+}
+
+
+.servicio-cont{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.servicio-ind{
+	width: auto;
+	text-align: center;
+}
+.servicio-ind h3{
+	margin: 10px 0;
+}
+
+.servicio-ind img{
+	width: 80%;
+	margin: 5px 20px;
+	font-weight: 300;
+	text-align: justify;
+	border-radius: 10px;
+
+}
+
+
+
+
+.servicio-ind p{
+	font-weight: 300;
+
+}
+
+/*FOOTER*/
+
+footer{
+	background: black;
+	overflow: hidden;
+	color: #fff;
+	padding: 60px 0 30px 0;
+	margin: auto;
+	height: 1%;
+
+}
+
+.contenedor-footer{
+	display:flex;
+	width: 90%;
+	justify-content:space-between;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #fff;
+}
+
+.content-foo{
+	display: flex;
+	text-align: center;
+	padding: 20px;
+	width: auto;
+	justify-content: center;
+}
+.content-foo img{
+	width: auto;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	padding: 5px;
+	margin: 20px;
+}
+
+.content-foo a>p{
+	color: inherit;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.titulo-final{
+	text-align: center;
+	font-size: 24px;
+	margin-top: 20px 0 0 0;
+	color: #596769;
+}
+
+/* Ejemplo de media query para dispositivos móviles */
+@media (max-width: 768px) {
+	body {
+	  font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+	}
+	
+	/* Modifica los estilos de los elementos según sea necesario */
+	.titulo {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	/* ... Agrega más estilos adaptados para dispositivos móviles ... */
+  }
+  
