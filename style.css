@@ -39,7 +39,7 @@ header{
     background-attachment: fixed;
 	position: relative;
 }
-.boton-descarga{
+nav > .boton-descarga{
 	background: #fff;
 	color: #123d6a;
 	padding: 10px 20px;
