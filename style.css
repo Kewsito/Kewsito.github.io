@@ -49,6 +49,7 @@ header{
 	font-size: 1rem;
 	margin-top: 20px;
 	display: inline-block;
+	font-weight:bold ;
 }
 nav{
 	text-align: right;
