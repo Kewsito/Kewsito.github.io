@@ -31,7 +31,7 @@ body{
 
 header{
 	width: 100%;
-	height: 600px;
+	height: 649px;
 	background:#134e5e;
 	background: -webkit-linear-gradient(to right, hsla(197, 38%, 28%, 0.493), hsla(194, 35%, 19%, 0.637), hsla(198, 43%, 11%, 0.541)), url(/img/header/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, hsla(197, 38%, 28%, 0.493), hsla(194, 35%, 19%, 0.637), hsla(198, 43%, 11%, 0.541)), url(/img/header/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -47,7 +47,6 @@ nav > .boton-descarga{
 	text-decoration: none;
 	font-weight: 300;
 	font-size: 1rem;
-	margin-top: 20px;
 	display: inline-block;
 	font-weight:bold ;
 }
@@ -64,7 +63,6 @@ nav > a {
 }
 nav > a:hover{
 	text-decoration: underline;
-	margin: 5px;
 	
 }
 
