@@ -39,7 +39,17 @@ header{
     background-attachment: fixed;
 	position: relative;
 }
-
+.boton-descarga{
+	background: #fff;
+	color: #123d6a;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 1rem;
+	margin-top: 20px;
+	display: inline-block;
+}
 nav{
 	text-align: right;
 	padding: 30px 50px 0 0;
