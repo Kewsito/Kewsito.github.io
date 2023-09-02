@@ -296,19 +296,19 @@ footer{
 	background: black;
 	overflow: hidden;
 	color: #fff;
-	padding: 60px 0 30px 0;
+	padding: 5px;
 	margin: auto;
-	height: 1%;
+	height: 0.5%;
 
 }
 
 .contenedor-footer{
 	display:flex;
-	width: 90%;
-	justify-content:space-between;
+	width:100%;
+	justify-content:space-around;
 	margin: auto;
-	padding-bottom: 50px;
-	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid grey;
 }
 
 .content-foo{
@@ -320,18 +320,13 @@ footer{
 }
 .content-foo img{
 	width: auto;
-	height: 100px;
+	height: 120px;
 	border-radius: 50%;
 	margin-bottom: 20px;
 	padding: 5px;
 	margin: 20px;
 }
 
-.content-foo a>p{
-	color: inherit;
-	font-weight: 400;
-	text-decoration: none;
-}
 
 .titulo-final{
 	text-align: center;
