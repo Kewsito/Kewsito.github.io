@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Proyectos from "../layouts/Proyectos.astro";
-import {typeWriter} from "../scripts/javascript.js";
-
+import Lenguajes from "../layouts/Lenguajes.astro";
 ---
 
 <Layout title="Home">
@@ -80,26 +79,22 @@ import {typeWriter} from "../scripts/javascript.js";
 
         <Proyectos
           title="QRAnalytics"
-          description="ASDAASDADA"
+          description="Aplicacion de escritorio desarrollada en Flet, SQLite, API Google y Python. Su principal funcion es transformar un PDF de tipo encuesta y lo sube Google Forms."
           vinculo="https://github.com/Kewsito/QRAnalytics"
         />
 
         <Proyectos
           title="AK Indumentaria"
-          description="ASDAASDADA"
-          vinculo="https://github.com/Kewsito/uStock"
-        />
+          <Proyectos
+            title="AK Indumentaria"
+            description="Marketplace de ropa y accesorios con funcionalidades de búsqueda, filtrado y carrito de compras."
+            vinculo="https://github.com/Kewsito/AK-Indumentaria"
+          />
 
         <Proyectos
           title="Schedule Generator"
-          description="ASDAASDADA"
-          vinculo="https://github.com/Kewsito/uStock"
-        />
-
-        <Proyectos
-          title="uStock"
-          description="ASDAASDADA"
-          vinculo="https://github.com/Kewsito/uStock"
+          description="Aplicación web que genera los horarios de clases para estudiantes universitarios."
+          vinculo="https://github.com/Kewsito/Schedule-Generator"
         />
       </div>
       <!-- MIS PROYECTOS-->
@@ -124,16 +119,10 @@ import {typeWriter} from "../scripts/javascript.js";
             Buscando mi primera experiencia laboral.
           </p>
         </div>
-        <div
-          class="mx-auto grid max-w-5xl items-start gap-6 sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3 my-10"
-        >
-          <div class="grid gap-1">
-            <h3 class="text-lg font-bold">HTML/CSS</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400">
-              I'm a frontend engineer with a passion for creating beautiful and
-              accessible user experiences.
-            </p>
-          </div>
+
+        <Lenguajes nombreLenguaje="HTML" icono=""/>
+        <div class="mx-auto grid max-w-5xl items-start gap-6 sm:grid-cols-2 md:gap-12 lg:max-w-6xl lg:grid-cols-3 my-10">
+          
           <div class="grid gap-1">
             <h3 class="text-lg font-bold">JavaScript</h3>
             <p class="text-sm text-gray-500 dark:text-gray-400">

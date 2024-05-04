@@ -1,0 +1,18 @@
+---
+import Layout from "./Layout.astro";
+
+interface Props {
+    nombreLenguaje: string;
+    icono: string
+}
+
+const { nombreLenguaje, icono } = Astro.props;
+
+---
+
+<Layout>
+    <div class="container">
+        <h1 class="text-xl font-bold">{nombreLenguaje}</h1>
+        <img src={icono} alt={nombreLenguaje} />
+    </div>
+</Layout>
