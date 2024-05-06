@@ -11,8 +11,8 @@ const { nombreLenguaje, icono } = Astro.props;
 ---
 
 <Layout>
-    <div class="justify-center rounded-xl">
+    <div class="justify-center rounded-xl 2 p-5 bg-neutral-800" >
         
-        <img src={icono} alt={nombreLenguaje}  class="mx-auto w-20 h-20"/>
+        <img src={icono} alt={nombreLenguaje} loading="lazy"  class="mx-auto w-20 h-20"/>
     </div>
 </Layout>
